@@ -1,0 +1,494 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+    /* font-family: 'Playfair Display', serif; */
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --width: 160px;
+    --height: 90px;
+    /* --bg-color: rgba(255, 255, 255, 0.50); */
+    --bg-color: rgba(255, 255, 255, 0.80);
+    --text-color: black;
+
+    --bg-color02: rgba(0, 0, 0, 1);
+    --text-color02: white;
+}
+
+body {
+    background-image: url(img/vista-superior-velhas-pecas-de-jornal-frances\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*e agora a regra de ouro que fará a imagem ocupar todo o viewport */
+    background-size: 100% auto;
+}
+
+/* DIV DE ROLAGEM DA PAGINA */
+.logo-back {
+    text-decoration: transparent;
+    margin-left: 121px;
+    /* margin-top: 34px; */
+}
+
+/* MENU */
+header {
+    position:absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33PX 9%;
+    /* background: transparent; */
+
+    background-color: var(--bg-color);
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 700;
+    color: black;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: black;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.35s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid black;
+}
+
+
+/* CORPO */
+.capa {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.bg-titulo{
+    padding: 20px 20px;
+    background-color: var(--bg-color);
+}
+
+.capa-text{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--bg-color);
+}
+
+.capa h1 {
+    font-size: 100px;
+}
+
+selection {
+    padding: 0 19%;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+
+    font-size: 20px;
+
+    background-color: var(--bg-color);
+}
+
+.body a {
+    border-radius: 100px;
+    padding: 10px 5px;
+    color: var(--text-color02);
+    background-color: black;
+}
+
+.body-selection {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33PX 9%;
+}
+
+.body-selection i {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.body h1 {
+    font-size: 35px;
+}
+
+.body-selection a {
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+
+    color: black;
+    font-size: 20px;
+}
+
+/* box 1 */
+
+.box-1 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color);
+}
+
+.box-01 i{
+    color: var(--text-color02);
+}
+
+.box-01 li{
+    color: var(--text-color02);
+}
+
+.box-01 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color02);
+}
+
+.box-1{
+    max-width: 100%;
+}
+.box-1:hover{
+    transform: translateY(-5px) scale(110%);
+}
+.box-01{
+    max-width: 100%;
+    height: var(--height);
+}
+.box-01:hover{
+    transform: translateY(-5px) scale(110%);
+}
+
+/* box 2 */
+
+.box-2 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color);
+}
+
+.box-02 i{
+    color: var(--text-color02);
+}
+
+.box-02 li{
+    color: var(--text-color02);
+}
+
+.box-02 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color02);
+}
+
+.box-2{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-2:hover{
+    transform: translateY(-5px) scale(110%);
+}
+.box-02{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-02:hover{
+    transform: translateY(-5px) scale(110%);
+}
+
+/* box 3 */
+
+.box-3 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color);
+}
+
+.box-03 i{
+    color: var(--text-color02);
+}
+
+.box-03 li{
+    color: var(--text-color02);
+}
+
+.box-03 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color02);
+}
+
+.box-3{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-3:hover{
+    transform: translateY(-5px) scale(110%);
+}
+.box-03{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-03:hover{
+    transform: translateY(-5px) scale(110%);
+}
+
+/* box 4 */
+
+.box-4 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color);
+}
+
+.box-04 i{
+    color: var(--text-color02);
+}
+
+.box-04 li{
+    color: var(--text-color02);
+}
+
+.box-04 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color02);
+}
+
+.box-4{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-4:hover{
+    transform: translateY(-5px) scale(110%);
+}
+.box-04{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-04:hover{
+    transform: translateY(-5px) scale(110%);
+}
+
+/* box 5 */
+
+.box-5 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color);
+}
+
+.box-05 i{
+    color: var(--text-color02);
+}
+
+.box-05 li{
+    color: var(--text-color02);
+}
+
+.box-05 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color02);
+}
+
+.box-5{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-5:hover{
+    transform: translateY(-5px) scale(110%);
+}
+.box-05{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-05:hover{
+    transform: translateY(-5px) scale(110%);
+}
+
+/* box 6 */
+
+.box-6 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color);
+}
+
+.box-06 i{
+    color: var(--text-color02);
+}
+
+.box-06 li{
+    color: var(--text-color02);
+}
+
+.box-06 {
+    text-align: center;
+    border-radius: 10px;
+    width: var(--width);
+    height: var(--height);
+    margin: 5px 5px;
+    padding: 8px;
+    background-color: var(--bg-color02);
+}
+
+.box-6{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-6:hover{
+    transform: translateY(-5px) scale(110%);
+}
+.box-6{
+    max-width: 100%;
+    height: auto;
+    /* width: 150px; */
+}
+.box-6:hover{
+    transform: translateY(-5px) scale(110%);
+}
+
+
+
+/* body {
+    background-image: url(../img/WhatsApp\ Image\ 2023-05-11\ at\ 16.51.34.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    //e agora a regra de ouro que fará a imagem ocupar todo o viewport 
+    background-size: 100% auto;
+}
+
+//CSS TOP/CABEÇALHO 
+.all{
+    background-color: rgba(219, 182, 132,0.5);
+}
+
+.container {
+    max-width: 1400px;
+    padding: 3%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    font-size: 55px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+.container a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    border-radius: 30px;
+    transition: 0.6s;
+}
+
+.container a:hover {
+    background-color: white;
+} */
