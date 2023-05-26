@@ -60,6 +60,10 @@ header {
     color: black;
 }
 
+.bx-headphone{
+    font-size: 40px;
+}
+
 .navlist {
     display: flex;
 }
